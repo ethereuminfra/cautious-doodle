@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+/* NORMALIZE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    appearance: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none; /* removes underline */
+    color: inherit;        /* uses parent element's text color */
+}
+/* NORMALIZE */
+
+body {
+    background: #121212;
+    color: #F1F1F1;
+    font: 500 normal 22px/1.3 'Inter', sans-serif;
+}
+.mwg_effect041 {
+    text-transform: uppercase;
+    color: #BAB8B9;
+    min-height: 100vh;
+}
+.mwg_effect041 .header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(185, 185, 185, 0.3);
+    padding: 30px;
+}
+.mwg_effect041 .header > * {
+    flex: 1;
+}
+.mwg_effect041 .header p {
+    font-size: 14px;
+    line-height: 1;
+}
+.mwg_effect041 .header .col1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.mwg_effect041 .header .col2 {
+    text-align: center;
+}
+.mwg_effect041 .header .col3 {
+    text-align: right;
+}
+.mwg_effect041 .item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    width: max-content;
+    font: 500 normal 6.6vw / 0.9 'Inter', sans-serif;
+    letter-spacing: -0.06em;
+}
+.mwg_effect041 ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3vw 0 0;
+}
+.mwg_effect041 .item.hovered span {
+    pointer-events: none;
+}
+.mwg_effect041 .hidden {
+    pointer-events: none;
+    position: absolute;
+    bottom: 100%;
+}
+.mwg_effect041 .item span {
+    display: inline-block;
+    will-change: transform;
+}
+
+@media (max-width: 768px) {
+    .mwg_effect041 .header .col2,
+    .mwg_effect041 .header .col3 {
+        display: none;
+    }
+    .mwg_effect041 ul {
+        padding: 30px 0 0;
+    }
+    .mwg_effect041 .item {
+        font-size: 36px;
+    }
+}
+
+.mwg_effect030 {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font: 400 normal 15px / normal 'Inter', sans-serif;
+    letter-spacing: -0.03em;
+}
+.mwg_effect030 ul {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.mwg_effect030  ul li {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 18px 25px;
+    cursor: pointer;
+}
+.mwg_effect030  ul li span:nth-child(1){
+    width: 25%;
+}
+.mwg_effect030  ul li span:nth-child(3){
+    text-align: right;
+    flex: 1;
+    visibility: hidden;
+}
+.mwg_effect030  ul li:hover span:nth-child(3){
+    visibility: visible;
+}
+.mwg_effect030 .media-container {
+    position: absolute;
+    width: 24vw;
+    height: 24vw;
+    right: 16%;
+    top: 0;
+    border-radius: 2%;
+    pointer-events: none;
+    overflow: hidden; 
+    visibility: hidden;
+}
+.mwg_effect030 .media-container.on {
+    visibility: visible;
+}
+.mwg_effect030 .media-container div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Hides anything overflowing during the animation */
+    transform: translate(0, -100%); /* Starts above the mask */
+}
+.mwg_effect030 .media-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translate(0, 90%) /* Starts almost completely below the parent */
+}
+.mwg_effect030 .medias img { 
+    width: 1px;
+    height: 1px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .mwg_effect030  ul li span:nth-child(1){
+        flex: 2;
+    }
+    .mwg_effect030  ul li span:nth-child(2){
+        display: none;
+    }
+    .mwg_effect030  ul li span:nth-child(3){
+        visibility: visible;
+    }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+.mwg_effect008 {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    overflow: clip;
+}
+.mwg_effect008 .container {
+    width: max-content;
+    white-space: nowrap;
+    display: flex;
+    gap: 1vw;
+    padding: 0 1vw 0 0;
+    user-select: none;
+    cursor: grab;
+}
+.mwg_effect008 .card {
+    width: 25vw;
+    aspect-ratio: 1;
+}
+.mwg_effect008 .card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    pointer-events: none;
+}
+.mwg_effect008 .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+.mwg_effect008 .header .texts {
+    display: flex;
+    justify-content: space-between;
+    font: 500 normal 3.5vw / normal 'Inter', sans-serif;
+}
+.mwg_effect008 .header .drag {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 10px 0 0;
+}
+.mwg_effect008 .header .drag img {
+    width: 23px;
+    height: auto;
+}
+.mwg_effect008 .header .drag p {
+    font: 500 normal 13px / normal 'IBM Plex Mono';
+}
+
+@media (max-width: 768px) {
+    .mwg_effect008 .header .texts {
+        font-size: 40px;
+        flex-direction: column;
+    }
+    .mwg_effect008 .card {
+        width: 42vw;
+    }
+}
+
+.mwg_effect044 .root {
+    position: relative;
+}
+.mwg_effect044 .header,
+.mwg_effect044 .footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 25px 0;
+}
+.mwg_effect044 .header p,
+.mwg_effect044 .footer p {
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    font-size: 16px;
+}
+.mwg_effect044 .footer {
+    position: relative;
+    border-top: 1px solid rgb(95, 95, 95);
+    margin: calc(2 * 25px) 0 0;
+}
+.mwg_effect044 .footer p {
+    color: rgb(95, 95, 95)
+}
+.mwg_effect044 .footer a {
+    color: inherit;
+    text-decoration: none;
+}
+.mwg_effect044 .duplicate .footer p {
+    color: var(--white);
+}
+.mwg_effect044 .line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mwg_effect044 .line p {
+    font: 500 normal 9vw / 0.9 'Inter', sans-serif;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+}
+.mwg_effect044 .line_email p {
+    font: 500 normal 5.5vw / 0.9 'Inter', sans-serif;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.mwg_effect044 .line p:first-child {
+    margin: 0 0 0 -0.07em;
+}
+
+
+.mwg_effect044 .line_email p:first-child {
+    margin: 0 0 0 -0.07em;
+}
+
+
+.mwg_effect044 .photo {
+    width: 11.2vw;
+    height: max-content;
+    aspect-ratio: 1.5;
+    object-fit: cover;
+    transform: translate(0, -5%);
+    border-radius: 0.5vw;
+}
+.mwg_effect044 .icon {
+    width: 7.8vw;
+    height: auto;
+}
+.mwg_effect044 .containers {
+    position: relative;
+    pointer-events: none;
+}
+.mwg_effect044 .container {
+    position: relative;
+    padding: 0 25px;
+    height: 100vh;
+}
+.mwg_effect044 .duplicate {
+    --xpercent: 50%;
+    --ypercent: 50%;
+    mask-image: radial-gradient(circle at var(--xpercent) var(--ypercent), #000 20%, transparent 25%); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #C9FE6E;
+}
+.mwg_effect044 .duplicate .header {
+    color: #C9FE6E;
+}
+
+@media (max-width: 768px) {
+    .mwg_effect044 .header p:last-child, 
+    .mwg_effect044 .footer p:last-child {
+        display: none;
+    }
+    .mwg_effect044 .photo {
+        width: 8vw;
+        transform: translate(0, -15%);
+    }
+}
